@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: auto;
+}
+.dropdown-menu.custom-dropdown  {
+    right: 0 !important;
+    left: initial;
+    color: red;
+}
+
+.my-navlink > .nav-item {
+    margin-left: 20px;
+}
+.my-navlink .nav-link{
+    font-size: 15px;
+}
+@media only screen and (max-width: 1000px) {
+    .my-navlink > .nav-item {
+        margin-left: 0;
+    }
+}
+
+.nav-btn{
+    width: 100px;
+    margin-left: 10px;
+    /*width: 100%;*/
+}
+@media only screen and (max-width: 1000px) {
+    .nav-btn{
+        margin-top: 5px;
+        width: 100%;
+        margin-left: 0;
+        /*width: 100%;*/
+    }
+}
+.filter-container {
+    margin-top: 5px;
+    width: 100%;
+    /*display: flex;*/
+    /*white-space: nowrap;*/
+    /*max-width: 1000px;*/
+    /*overflow-x: scroll;*/
+}
+.filter-btn{
+    border: 0;
+    border-radius: 5px;
+    /*padding: 2px 10px 2px 10px;*/
+
+    width: 100px;
+}
+.filter-container{
+    display: flex;
+    align-items: center;
+    /*margin: 5px 0px 5px;*/
+}
+.filter-container >  button {
+
+    /*padding: 2px 5px 2px 5px;*/
+    /*height: 30px;*/
+}
+.filter-container > button > i {
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+}
+.filter-container  select {
+    width: 90px;
+    font-size: 7px;
+    /*width: 100%;*/
+}
+@media only screen and (max-width: 1000px) {
+    .filter-container > select {
+        width: 50px!important;
+    }
+}
+.show-filter-btn {
+ width: 100%;
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    .show-filter-btn {
+        display: block;
+    }
+}
+
+.carousel-item > img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.category-item{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.category-icon{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.category-icon > i {
+    color: white;
+    font-size: 50px;
+    line-height: 100px;
+}
+.bg-yl{
+    background: #ffba00!important;
+}
+.bg-grey {
+    background: rgb(155, 158, 164);
+}
