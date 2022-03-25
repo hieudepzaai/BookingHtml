@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <!--    <script src="https://kit.fontawesome.com/b786a26b02.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="resources/plugin/lightSlider/css/lightslider.min.css">
     <script src="/resources/js/b786a26b02.js"></script>
     <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/post.css">
 </head>
-<body>
+<body >
 <nav class="navbar navbar-expand-lg navbar-light bg-yl">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="/resources/img/logo.webp" alt=""></a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/resources/img/logo.webp" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,9 +39,16 @@
                      <a class="nav-link" href="#"> <i class="bi bi-bell-fill"></i>  notification</a>
                 </li>
 
+
+                <li class="">
+                    <a class="nav-link btn btn-success text-white nav-btn" href="#"> <i class="bi bi-bell-fill"></i>  Register</a>
+                </li>
+                <li class="">
+                    <a class="nav-link btn btn-danger text-white nav-btn " href="#"> <i class="bi bi-bell-fill"></i>  New Post</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        More
+                    <a class="nav-link dropdown-toggle  btn btn-secondary text-white " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user"></i>  Account
                     </a>
                     <ul class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
                         <li ><a class="dropdown-item " href="#">Action</a></li>
@@ -47,12 +56,6 @@
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                </li>
-                <li class="">
-                    <a class="nav-link btn btn-success text-white nav-btn" href="#"> <i class="bi bi-bell-fill"></i>  Register</a>
-                </li>
-                <li class="">
-                    <a class="nav-link btn btn-danger text-white nav-btn " href="#"> <i class="bi bi-bell-fill"></i>  Login</a>
                 </li>
             </ul>
 
@@ -105,7 +108,7 @@
 <!--end slider-->
 
 <!--filter-->
-<div class="section w-100">
+<div class="section w-100 mx-0">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -151,7 +154,7 @@
 
 <!--category -->
 <div class="section w-100">
-    <div class="container">
+    <div class="container ">
         <div class="row">
             <div class="col-12">
                 <h4>
@@ -160,7 +163,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <a class="category-item shadow ">
-                    <div class="category-icon rounded-circle bg-grey">
+                    <div class="category-icon rounded-circle bg-yl">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
                     <div class="category-name">
@@ -171,7 +174,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <a class="category-item shadow  ">
-                    <div class="category-icon rounded-circle bg-grey">
+                    <div class="category-icon rounded-circle bg-yl">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
                     <div class="category-name">
@@ -182,22 +185,22 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <a class="category-item shadow ">
-                    <div class="category-icon rounded-circle bg-grey">
+                    <div class="category-icon rounded-circle bg-yl">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
                     <div class="category-name">
-                        Cho thuê nhà
+                        Tìm người ở ghép
                     </div>
 
                 </a>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <a class="category-item shadow ">
-                    <div class="category-icon rounded-circle bg-grey">
+                    <div class="category-icon rounded-circle bg-yl">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
                     <div class="category-name">
-                        Cho thuê nhà
+                        Bán Nhà
                     </div>
 
                 </a>
@@ -208,14 +211,878 @@
 </div>
 <!--end category-->
 
+
+<!--section specific slider-->
+<div class="section w-100">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="section-title">
+                    Cho thuê bất động sản
+                </h4>
+            </div>
+        </div>
+        <div class="row" id="slider">
+
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--end section specific slider-->
+
+<!--section specific-->
+<div class="section w-100">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                <a class="section-title">
+                    Cho thuê bất động sản
+                </a>
+            </div>
+        </div>
+        <div class="row" >
+
+            <div class="col-md-3 ">
+
+                    <div class="post-item-container w-100 shadow  ">
+                        <div class="featured">
+                            <div class="ribbon">Vip</div>
+                        </div>
+                        <a class="like-btn liked">
+                            <i class="fa-brands fa-gratipay"></i>
+                        </a>
+                        <a href="/detail.html" class="post-item-link-wrapper">
+                            <div class="post-item-img-container w-100 ">
+                                <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                                <div class="img-count">
+                                    <i class="fa-solid fa-images"></i> <span>20</span>
+                                </div>
+                            </div>
+                            <div class="w-100 post-item-body ">
+                                <div>
+                                    <span class="badge bg-success">Success</span>
+                                    <span class="badge bg-primary">Ở ghép</span>
+                                    <span class="badge bg-info">cho thuê chung cư</span>
+                                    <span class="badge bg-danger">Bán nhà</span>
+                                    <span class="badge bg-primary">Ở ghép</span>
+
+
+                                </div>
+                                <p class="post-name">Post Name</p>
+                                <span>45 m2</span>
+                                <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                                <p class="text-secondary post-date">10 giờ trước  </p>
+
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-12">
+                <div class="w-100 text-center">
+<!--                    <span class="badge bg-success">Success</span>-->
+                    <a class="badge bg-success" href="">Xem thêm ></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end section specific-->
+
+
+<!--section specific-->
+<div class="section w-100">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                <a class="section-title">
+                    Cho thuê bất động sản
+                </a>
+            </div>
+        </div>
+        <div class="row list-view" id="">
+
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 ">
+
+                <div class="post-item-container w-100 shadow  ">
+                    <div class="featured">
+                        <div class="ribbon">Vip</div>
+                    </div>
+                    <a class="like-btn liked">
+                        <i class="fa-brands fa-gratipay"></i>
+                    </a>
+                    <a href="/detail.html" class="post-item-link-wrapper">
+                        <div class="post-item-img-container w-100 ">
+                            <img class="post-item-img" src="/resources/img/land2.jpg" alt="">
+                            <div class="img-count">
+                                <i class="fa-solid fa-images"></i> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="w-100 post-item-body ">
+                            <div>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+                                <span class="badge bg-info">cho thuê chung cư</span>
+                                <span class="badge bg-danger">Bán nhà</span>
+                                <span class="badge bg-primary">Ở ghép</span>
+
+
+                            </div>
+                            <p class="post-name">Post Name</p>
+                            <span>45 m2</span>
+                            <p class="text-danger post-price">500.000.000 vnd/tháng </p>
+                            <p class="text-secondary post-date">10 giờ trước  </p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <div class="w-100 text-center">
+                    <!--                    <span class="badge bg-success">Success</span>-->
+                    <a class="badge bg-success" href="">Xem thêm ></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end section specific-->
+
+<div class="footer w-100 bg-yl">
+    <span class="text-white fw-bold">Copyright @2022</span>
+</div>
 </body>
 <script src="/resources/js/bootstrap.bundle.min.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="/resources/plugin/lightSlider/js/lightslider.min.js"></script>
 <script>
     $(".js-example-placeholder-single").select2({
         placeholder: "select",
         allowClear: true,
+    });
+
+
+</script>
+
+<script>
+    $(document).ready(function() {
+        $("#slider").lightSlider({
+            loop:true,
+            keyPress:true,
+            item: 4,
+            responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
     });
 </script>
 </html>
